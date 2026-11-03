@@ -1,0 +1,104 @@
+/* Header ứng dụng, logo, thanh tab và tab panel */
+
+.app-header {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  border-bottom: 1px solid rgba(208, 213, 221, 0.8);
+  margin-bottom: 46px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.brand-mark {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 11px;
+  color: #fff;
+  background: linear-gradient(145deg, #6175ff, #3448d8);
+  box-shadow: 0 8px 18px rgba(70, 95, 255, 0.28);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.brand strong,
+.brand small {
+  display: block;
+}
+
+.brand strong {
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.brand small {
+  margin-top: 3px;
+  color: #98a2b3;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+
+.tabs {
+  display: flex;
+  align-self: stretch;
+  gap: 6px;
+  align-items: center;
+}
+
+.tab-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 42px;
+  padding: 0 16px;
+  border-radius: 10px;
+  background: transparent;
+  color: #667085;
+  font-size: 14px;
+  font-weight: 650;
+  cursor: pointer;
+  transition: color 160ms ease, background 160ms ease;
+}
+
+.tab-button:hover {
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.tab-button.active {
+  color: var(--brand);
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.06), 0 0 0 1px rgba(208, 213, 221, 0.55);
+}
+
+.tab-button svg {
+  width: 18px;
+  height: 18px;
+}
+
+.tab-panel {
+  display: none;
+  animation: panel-in 220ms ease-out;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+@keyframes panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+}

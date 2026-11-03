@@ -1,0 +1,23 @@
+/* Ô tìm kiếm có icon */
+
+.dashboard-tools {
+  position: relative;
+  width: min(340px, 100%);
+}
+
+.dashboard-tools svg {
+  position: absolute;
+  top: 50%;
+  left: 13px;
+  z-index: 1;
+  width: 17px;
+  height: 17px;
+  color: #98a2b3;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.dashboard-tools input {
+  padding: 0 14px 0 40px;
+  background: var(--soft);
+}

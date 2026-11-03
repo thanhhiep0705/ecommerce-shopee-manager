@@ -1,0 +1,46 @@
+/* Thanh trạng thái (loading / ok / error) */
+
+.status {
+  min-height: 0;
+  margin: 0 0 14px;
+  color: #cbd3eb;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.status:empty {
+  display: none;
+}
+
+.status.ok,
+.status.error {
+  padding: 9px 11px;
+  border-radius: 8px;
+}
+
+.status.ok {
+  color: #9ee6c5;
+  background: rgba(7, 148, 85, 0.14);
+}
+
+.status.error {
+  color: #fecdca;
+  background: rgba(217, 45, 32, 0.14);
+}
+
+.dashboard-status {
+  color: var(--muted);
+  margin: -14px 0 18px;
+}
+
+.dashboard-status.ok {
+  width: fit-content;
+  color: var(--success);
+  background: #ecfdf3;
+}
+
+.dashboard-status.error {
+  color: var(--danger);
+  background: #fef3f2;
+}

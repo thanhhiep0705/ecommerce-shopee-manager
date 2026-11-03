@@ -1,0 +1,87 @@
+/* Khung trang & responsive dùng chung */
+
+main {
+  width: min(1760px, 100%);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 40px 56px;
+}
+
+@media (max-width: 1200px) {
+  .summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 840px) {
+  main {
+    padding: 0 20px 40px;
+  }
+
+  .app-header {
+    margin-bottom: 32px;
+  }
+
+  .summary {
+    grid-template-columns: 1fr;
+  }
+
+  .metric {
+    min-height: 112px;
+  }
+}
+
+@media (max-width: 620px) {
+  main {
+    padding: 0 14px 28px;
+  }
+
+  .app-header {
+    min-height: auto;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+    padding: 16px 0 0;
+    margin-bottom: 28px;
+  }
+
+  .tabs {
+    width: 100%;
+    align-self: auto;
+    border-top: 1px solid #e4e7ec;
+    padding: 10px 0;
+  }
+
+  .tab-button {
+    flex: 1;
+  }
+
+  .page-heading {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .page-heading .refresh-button {
+    width: 100%;
+  }
+
+  .panel {
+    padding: 18px;
+    border-radius: 13px;
+  }
+
+  .section-heading {
+    align-items: stretch;
+    flex-direction: column;
+    padding: 18px;
+  }
+
+  .dashboard-tools {
+    width: 100%;
+  }
+
+  th,
+  td {
+    padding: 11px 13px;
+  }
+}

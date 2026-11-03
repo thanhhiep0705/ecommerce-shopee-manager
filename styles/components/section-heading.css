@@ -1,0 +1,24 @@
+/* Tiêu đề section bên trong panel */
+
+.section-heading h2 {
+  margin-bottom: 0;
+  color: #101828;
+  font-size: 18px;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 24px;
+  border-bottom: 1px solid #eaecf0;
+}
+
+.section-heading p {
+  margin: 5px 0 0;
+  color: #98a2b3;
+  font-size: 12px;
+}
